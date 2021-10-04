@@ -12,21 +12,46 @@ namespace IterationStatements
 
                 //Create a List called "numbers" - DONE!
                 var numbers = new List<int>();
-            
+
             //-----START HERE------------------------------------------
             //Create a variable of type int and name it num
             //initialize the variable with a value of 0
 
+            var myNum = 0;
 
 
             // Create a do-while loop and use the template below:
 
+            do
             {
-                // Increment num by 1
+                myNum++;
+                numbers.Add(myNum);
 
-                // Then add num to the collection - numbers
+            } while (myNum < 100);
+
+            while (myNum < 200) ;
+            
+            {
+                myNum++;
+                numbers.Add(myNum);
+            }
+            Console.WriteLine("Increase");
+
+            foreach (var detail in numbers)
+            {
+                Console.WriteLine(detail);
+            }
+            for (int i = 199; i <= numbers.Count && i >= 0; i--)
+            {
+                Console.WriteLine(numbers[i]);
+                
+                
+                
+                // Increment num by 1 done
+
+                // Then add num to the collection - numbers add
                     // Hint: reference num inside of the Add method's parentheses
-                numbers.Add(/* num */);
+                //numbers.Add(/* num */);
 
             } // <---- While your variable is less than 100
 
